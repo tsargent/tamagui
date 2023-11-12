@@ -41,8 +41,10 @@ Another quick start that gives a bit more customization is using `@tamagui/short
 import { shorthands } from '@tamagui/shorthands'
 import { themes, tokens } from '@tamagui/themes'
 import { createTamagui } from 'tamagui' // or '@tamagui/core'
+import {config} from '@tamagui/config/v2';
 
 const appConfig = createTamagui({
+  ...config,
   themes,
   tokens,
   shorthands,
